@@ -1,3 +1,8 @@
+body
+{
+    overflow-x: hidden;
+}
+
 #headNav > object
 {
     width: 100px;
@@ -5,7 +10,7 @@
 
 #carouselItem
 {
-    width: 100%;
+    width: 100vw;
     height: 35vw;
     overflow: hidden;
 }
@@ -13,6 +18,12 @@
 .hero
 {
     position: relative;
+    width: 100vw;
+}
+
+.backgroundCarousel
+{
+    width: 100vw;
 }
 
 .backgroundCarousel > div > div > div:first-child > div
@@ -48,4 +59,89 @@
     position: relative;
     top: 5vw;
     width: 40vw;
+}
+
+h1
+{
+    font-size: 32px;
+}
+
+.about
+{
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.aboutImage
+{
+    width: 80vw;
+}
+
+.services
+{
+    margin-top: 40px;
+    background-color: #DD5B5E;
+    color: white;
+    text-align: center;
+}
+
+.services h1
+{
+    padding-top: 20px;
+}
+
+.services object
+{
+    width: 50%;
+}
+
+.card
+{
+    max-width: 80vw;
+    margin: 20px 0;
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width: 992px)
+{
+    h1
+    {
+        font-size: 40px;
+    }
+
+    .about
+    {
+        margin: 2vw;
+        text-align: left;
+        padding: 0;
+    }
+
+    #aboutText
+    {
+        position: relative;
+    }
+
+    .aboutText
+    {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .aboutImage
+    {
+        width: 40vw;
+    }
+
+    .services h1
+    {
+        padding-bottom: 20px;
+    }
+
+    .card
+    {
+        margin: 0;
+    }
 }
