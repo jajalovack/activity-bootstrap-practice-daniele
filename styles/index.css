@@ -1,5 +1,6 @@
 body
 {
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -76,6 +77,7 @@ h1
 .aboutImage
 {
     width: 80vw;
+    border-radius: 20px;
 }
 
 .services
@@ -84,6 +86,7 @@ h1
     background-color: #DD5B5E;
     color: white;
     text-align: center;
+    height: 1000px;
 }
 
 .services h1
@@ -100,6 +103,28 @@ h1
 {
     max-width: 80vw;
     margin: 20px 0;
+}
+
+.contactUs
+{
+    background-color: #2966CB;
+    color: white;
+    padding: 20px;
+}
+
+.contactForm
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.formIcon
+{
+    width: 50%;
+    margin: 10px;
+    display: none;
 }
 
 /* DESKTOP VIEW */
@@ -135,6 +160,11 @@ h1
         width: 40vw;
     }
 
+    .services
+    {
+        height: 420px;
+    }
+
     .services h1
     {
         padding-bottom: 20px;
@@ -143,5 +173,16 @@ h1
     .card
     {
         margin: 0;
+    }
+
+    #lineBreak
+    {
+        display: none;
+    }
+
+    .formIcon
+    {
+        width: 50%;
+        display: inline;
     }
 }
